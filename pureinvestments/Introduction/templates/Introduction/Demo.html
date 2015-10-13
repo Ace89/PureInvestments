@@ -1,0 +1,36 @@
+{% load staticfiles %}
+<html>
+<head>
+	<title>{% block title %}{% endblock %}</title>
+	<script type="text/javascript" src="{{ STATIC_URL }}js/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'Introduction/style2.css' %}" />
+</head>
+<body>
+<div id="wrapper">
+
+<div id="header"/>
+
+<div class="header-title">
+<h1>Site Name</h1>
+</div>
+<div class="nav-menu">
+<ul>
+<li><a href="#">Link 1</a></li>
+<li><a href="#">Link 2</a></li>
+<li><a href="#">Link 3</a></li>
+</ul>
+</div>
+</div>
+
+<div id="main"/>
+<p>This will contain the main introduction on the main page</p>
+</div>
+
+<div id="footer"/>
+<p>This is a footer</p>
+</div>
+
+</div>
+</body>
+</html>
+

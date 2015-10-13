@@ -1,0 +1,81 @@
+{% load staticfiles %}
+<html>
+<head>
+	<title>{% block title %}{% endblock %}</title>
+	<script type="text/javascript" src="{{ STATIC_URL }}js/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'Introduction/style.css' %}" />
+</head>
+<body>
+<div id="main-nav" class="navbar navbar-inverse bs-docs-nav" role="banner">
+    <div class="container">
+        <div class="navbar-header responsive-logo">
+            <a href="./" class="navbar-brand">
+                <img src="{% static 'Introduction/Pure-Investments-Logo-200px.png' %}" alt="PureInvestments" />
+            </a>
+	</div>
+        <nav class="nav-menu" role="navigation" style="height: 1px;">
+    		<ul class="nav navbar-nav navbar-right responsive-nav main-nav-list">
+        		<li >
+            			<a data-id="who-we-are" href='#who-we-are'>About Us</a>
+				<!-- replace the "#who-we-are" with links to relevant HTML pages-->
+        		</li>
+        		<li >
+            			<a data-id="how-we-work" href='#how-we-work'>Islamic Finance</a>
+        		</li>
+        		<li >
+            			<a data-id="case-studies" href='#case-studies'>Sharia Principles</a>                    
+        		</li>
+        		<li class="last">
+            			<a data-id="contact" href='#contact'>Contact</a>
+        		</li>
+    		</ul>
+	</nav>
+    </div>
+</div>
+
+<div id="main">
+	<img src="{% static 'Introduction/London.png' %}" alt="" width="1335px" height="500px" /></a>					
+	<!--<p> This is the main paragraph</p> -->
+</div>
+
+<div id ="footer">
+	<p>This is the footer</p>
+</div>
+
+<!--
+		<div class="wrap">
+			<div class="clr"></div>
+			<div class="nav">
+				<h1 style="text-align:center"> Header Example </h1>
+				<table border="0" cellspacing="0" cellpadding="0">
+				<tr>				
+				<td>				
+				<ul>
+					<li><a href="About">About Us</a></li>
+				</ul>
+				</td>
+				<td>				
+				<ul>
+					<li><a href="Contact">
+					<img src="{% static 'Introduction/contactTab.jpg' %}" alt="" width="85" height="40" /></a>
+					</li>
+				</ul>
+				</td>
+				</tr>
+				</table>
+				<p> The purpose of this website is to act as an information hub, for individuals wanting to invest in a Sharia compliant manner.</p>
+				
+			</div>
+		</div>
+	</div>
+-->
+	<div class="wrap">
+		<div class="content">	
+			{% block content %}
+			{% endblock %}
+		</div>
+	</div>
+
+</body>
+</html>
+

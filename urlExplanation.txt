@@ -1,0 +1,31 @@
+The url() function is passed four arguments, two required: regex and view and
+two optional: kwargs and name. 
+
+url() argument: regex
+The term regex is a commonly used short form meaning "regular expression", 
+which is a syntax for matching patterns in strings, or in this case. url 
+patterns. Django starts at the first regular expression and makes its way
+down the list, comparing the requested URL against each expression until
+it finds one that matches.
+
+url() argument: view
+When Django finds a regular expression match, Django calls the specified view
+function, with a HttpRequest object as the first argument and any "captured" 
+values from the regular expression as other arguments. If the regex uses simple
+captures, values are passed as positional arguments: if it uses named captures,
+values are passed as keyword arguments.
+
+url() argument: kwargs
+Arbitrary arguments can be passed in a dictionary to the target view. 
+
+url() argument: name
+Naming your url lets you refer to it umabiguously from elsewhere in Django 
+especially templates. This powerful feature allows you to make global changes
+to the url patterns of your project while only touching a single file.
+
+When somebody requests a page from the website, Django will load the pureinvestments.urls Python module
+because it is pointed to by the ROOT_URLCONF setting. It finds the variable named urlpatterns and traverses the regular expression in order. 
+
+Each view is responsible for doing one of two things: returning an HttpResponse object containing the content for the requested page or raising an exception such as Http404.
+
+

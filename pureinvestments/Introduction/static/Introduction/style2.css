@@ -1,0 +1,48 @@
+body{
+    background-color: lightgrey;
+}
+
+/*=====================LINKS===============================*/
+
+a:active{text-decoration: none;color:purple;}
+a:hover{text-decoration: none;color:purple;}
+a:visited{text-decoration: none;color:purple;}
+a{text-decoration: none;color:purple;}
+
+/*=====================HEADER===============================*/
+#header{
+background-color:wheat;
+height:120px;
+
+}
+
+#header .header-title h1{
+color:red;
+background-color:silver;
+width:300px;
+}
+
+#header .nav-menu ul{
+background-color:green;
+list-style: none;
+float:right;
+}
+
+#header .nav-menu ul li{
+float: left;
+padding:5px;
+margin:5px;
+background-color:green;
+}
+
+/*=====================MAIN===============================*/
+
+#main{
+background-color:gold;
+}
+
+/*=====================FOOTER===============================*/
+
+#footer{
+background-color:green;
+}

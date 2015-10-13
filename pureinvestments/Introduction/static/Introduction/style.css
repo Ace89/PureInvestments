@@ -1,0 +1,47 @@
+
+body{
+    background-color: lightgrey;
+}
+
+/*=====================LINKS===============================*/
+
+a:active{text-decoration: none;color:green;}
+a:hover{text-decoration: none;color:green;}
+a:visited{text-decoration: none;color:green;}
+a{text-decoration: none;color:green;}
+
+/*=====================HEADER===============================*/
+
+#main-nav{
+	background-color : white;
+	height: 120px;
+}
+
+#main-nav .nav-menu ul{
+	position: absoute;
+	background-color : white;
+	list-style: none;
+	float: right;
+	text-align: left;
+}
+
+#main-nav .nav-menu ul li{
+	float: left;
+	padding: 5px;
+	margin: 5px;
+	background-color : white;
+}
+
+/*=====================MAIN===============================*/
+
+#main{
+height: 500px;
+}
+
+/*=====================FOOTER===============================*/
+
+#footer{
+background-color:white;
+height: 100px;
+float: bottom;
+}
